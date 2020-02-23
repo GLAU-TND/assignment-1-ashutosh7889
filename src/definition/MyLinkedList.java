@@ -15,4 +15,8 @@ public class MyLinkedList<T extends Comparable<T>> {
         iter = head;
     }
 
+    public Node<T> getIter() {
+        return iter;
+    }
+
 }
