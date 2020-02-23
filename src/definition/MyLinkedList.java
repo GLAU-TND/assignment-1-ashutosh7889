@@ -10,4 +10,9 @@ public class MyLinkedList<T extends Comparable<T>> {
         return head;
     }
 
+    public void setHead(Node<T> node) {
+        head = node;
+        iter = head;
+    }
+
 }
