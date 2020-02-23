@@ -69,4 +69,20 @@ public class MyLinkedList<T extends Comparable<T>> {
         return head == null;
     }
 
+    public Node<T> getObject() {
+
+        Node<T> temp;
+
+        if (getIter() == null && getHead() == null) {
+            System.out.println("List is empty");
+            return null;
+        } else if (getIter() == null) {
+            setIter(getHead());
+            return null;
+        }
+        temp = getIter();
+        setIter(getIter().getNext());
+        return temp;
+    }
+
 }
