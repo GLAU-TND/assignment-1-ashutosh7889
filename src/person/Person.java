@@ -24,4 +24,8 @@ public class Person implements Comparable<Person> {
         this.lastName = lastName;
     }
 
+    public String getEmailID() {
+        return emailID;
+    }
+
 }
