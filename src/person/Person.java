@@ -15,4 +15,8 @@ public class Person implements Comparable<Person> {
         this.firstName = firstName;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
 }
