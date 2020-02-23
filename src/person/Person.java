@@ -19,4 +19,9 @@ public class Person implements Comparable<Person> {
         return lastName;
     }
 
+    public void setLastName(String lastName) {
+        System.out.println(lastName);
+        this.lastName = lastName;
+    }
+
 }
