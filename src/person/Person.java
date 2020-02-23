@@ -62,4 +62,9 @@ public class Person implements Comparable<Person> {
                     "-------- * -------- * -------- * --------";
     }
 
+    @Override
+    public int compareTo(Person newPerson) {
+        return this.getFirstName().compareTo(newPerson.getFirstName());
+    }
+
 }
