@@ -15,4 +15,8 @@ public class Node<T> {
     public Node<T> getNext() {  //getter method for referential variable
         return next;
     }
+
+    public void setNext(Node<T> next) { //setter method for referential variable
+        this.next = next;
+    }
 }
