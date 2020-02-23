@@ -32,4 +32,8 @@ public class Person implements Comparable<Person> {
         this.emailID = emailID;
     }
 
+    public StringBuffer getPhoneNumber() {
+        return this.phoneNumbers;
+    }
+
 }
