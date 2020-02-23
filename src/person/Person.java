@@ -28,4 +28,8 @@ public class Person implements Comparable<Person> {
         return emailID;
     }
 
+    public void setEmailID(String emailID) {
+        this.emailID = emailID;
+    }
+
 }
