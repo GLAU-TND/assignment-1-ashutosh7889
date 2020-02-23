@@ -6,4 +6,8 @@ public class Person implements Comparable<Person> {
     private String emailID;                     //EmailId of person
     private StringBuffer phoneNumbers;          //phone number of person
 
+    public String getFirstName() {
+        return firstName;
+    }
+
 }
