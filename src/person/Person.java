@@ -44,4 +44,22 @@ public class Person implements Comparable<Person> {
         }
     }
 
+    @Override
+    public String toString() {
+        if (this.getEmailID() != "")
+            return "-------- * -------- * -------- * --------\n" +
+                    "First Name: " + this.getFirstName() + "\n" +
+                    "Last Name: " + this.getLastName() + "\n" +
+                    "Contact Number(s): " + getPhoneNumber() + "\n" +
+                    "Email address: " + this.getEmailID() + "\n" +
+                    "-------- * -------- * -------- * --------";
+        else
+
+            return "-------- * -------- * -------- * --------\n" +
+                    "First Name: " + this.getFirstName() + "\n" +
+                    "Last Name: " + this.getLastName() + "\n" +
+                    "Contact Number(s): " + getPhoneNumber() + "\n" +
+                    "-------- * -------- * -------- * --------";
+    }
+
 }
