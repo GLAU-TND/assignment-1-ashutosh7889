@@ -65,4 +65,8 @@ public class MyLinkedList<T extends Comparable<T>> {
         return deletedNode;
     }
 
+    public boolean isEmpty() {
+        return head == null;
+    }
+
 }
