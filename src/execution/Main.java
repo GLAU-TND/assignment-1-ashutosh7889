@@ -10,6 +10,11 @@ public class Main {
         Menu menu = new Menu();
         while (flag) {
             int n = menu.showChoice();
+            switch (n) {
+                case 1:
+                    menu.addChoice();
+                    break;
+            }
 
         }
     }
