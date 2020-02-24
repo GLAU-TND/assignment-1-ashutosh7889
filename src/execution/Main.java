@@ -14,6 +14,9 @@ public class Main {
                 case 1:
                     menu.addChoice();
                     break;
+                case 2:
+                    menu.viewChoice();
+                    break;
             }
 
         }
