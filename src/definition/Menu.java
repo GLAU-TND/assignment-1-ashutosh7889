@@ -22,5 +22,38 @@ public class Menu {
                 "Press 5 to exit program");
         return scan.nextInt();
     }
-}
 
+    public void addChoice() {
+        Person person = new Person();
+        String name;
+        System.out.println("You have chosen to add a new contact: \n" +
+                "Please enter the name of the Person\n");
+        scan.nextLine();
+
+        System.out.print("First Name: ");
+        name = scan.nextLine().trim();
+        person.setFirstName(name);
+
+        System.out.print("Last Name: ");
+        name = scan.nextLine().trim();
+        person.setLastName(name);
+
+        String number;
+        System.out.print("Contact Number: ");
+        number = scan.nextLine().trim();
+        person.setPhoneNumbers(number);
+
+        char c;
+        System.out.print("Would you like to add another contact number? (y/n): ");
+        c = scan.nextLine().trim().charAt(0);
+        while (c == 'y') {
+            System.out.print("Contact Number: ");
+            number = scan.nextLine().trim();
+            person.setPhoneNumbers(number);
+
+            System.out.print("Would you like to add another contact number? (y/n): ");
+            c = scan.nextLine().trim().charAt(0);
+        }
+    }
+
+}
