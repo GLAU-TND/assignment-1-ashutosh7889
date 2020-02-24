@@ -1,5 +1,6 @@
 package definition;
 
+import node.Node;
 import person.Person;
 
 import java.util.Scanner;
@@ -54,6 +55,25 @@ public class Menu {
             System.out.print("Would you like to add another contact number? (y/n): ");
             c = scan.nextLine().trim().charAt(0);
         }
+        String email = null;
+        System.out.print("Would you like to add email address? (y/n): ");
+        c = scan.nextLine().trim().charAt(0);
+        if (c == 'y') {
+            System.out.print("Email Address: ");
+            email = scan.nextLine().trim();
+            person.setEmailID(email);
+            System.out.println("y");
+        } else {
+            person.setEmailID("");
+            System.out.println("n");
+        }
+
+        Node<Person> node = new Node<>();
+        node.setData(person);
+        linkedList.insert(node);
     }
 
+    private void sortList(MyLinkedList<Person> linkedList) {
+        linkedList.sort();
+    }
 }
