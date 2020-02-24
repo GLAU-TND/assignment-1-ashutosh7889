@@ -76,4 +76,14 @@ public class Menu {
     private void sortList(MyLinkedList<Person> linkedList) {
         linkedList.sort();
     }
+
+    public void viewChoice() {
+        sortList(linkedList);
+        while (true) {
+            Node<Person> node = linkedList.getObject();
+            if (node == null)
+                break;
+            System.out.println(node.getData());
+        }
+    }
 }
