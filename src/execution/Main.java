@@ -23,7 +23,12 @@ public class Main {
                 case 4:
                     menu.deleteChoice();
                     break;
+                case 5:
+                    menu.exitChoice();
+                    flag = false;
+                    break;
             }
 
         }
     }
+}
