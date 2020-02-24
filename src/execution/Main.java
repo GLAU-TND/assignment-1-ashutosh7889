@@ -20,6 +20,9 @@ public class Main {
                 case 3:
                     menu.searchChoice();
                     break;
+                case 4:
+                    menu.deleteChoice();
+                    break;
             }
 
         }
