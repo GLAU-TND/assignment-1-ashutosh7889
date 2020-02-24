@@ -17,6 +17,9 @@ public class Main {
                 case 2:
                     menu.viewChoice();
                     break;
+                case 3:
+                    menu.searchChoice();
+                    break;
             }
 
         }
